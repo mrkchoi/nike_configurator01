@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Helvetica Now DM';
+    font-style: medium;
+    font-weight: 500;
+    src: url('/assets/fonts/HelveticaNowDisplayMedium.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Helvetica Now Text';
+    font-style: regular;
+    font-weight: 400;
+    src: url('/assets/fonts/HelveticaNowText.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Helvetica Now Text Medium';
+    font-style: medium;
+    font-weight: 500;
+    src: url('/assets/fonts/HelveticaNowTextMedium.woff2') format('woff2');
+  }
+}
