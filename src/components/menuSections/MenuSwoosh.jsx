@@ -52,7 +52,7 @@ function MenuSwoosh({ activeSection }) {
         activeSection === 7 ? 'flex' : 'hidden',
       ].join(' ')}
     >
-      <div className="flex gap-2">
+      <div className="flex gap-2 text-sm">
         <button
           className={[
             'materialBtn flex items-center gap-1 rounded-full border border-gray-200 bg-white p-2 pl-12 pr-12',

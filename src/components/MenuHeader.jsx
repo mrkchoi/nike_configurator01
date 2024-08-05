@@ -17,7 +17,7 @@ function MenuHeader({
   handleNextSection,
 }) {
   const { setModalMenuOpen } = useCustomization();
-  const isMobile = useMediaQuery({ query: '(max-width: 576px)' });
+  const isTablet = useMediaQuery({ query: '(max-width: 768px)' });
 
   return (
     <div className="flex w-full items-center justify-between">
@@ -53,12 +53,12 @@ function MenuHeader({
         <button
           className={[
             'flex items-center gap-1 rounded-full border border-gray-200 bg-white',
-            isMobile ? 'p-3' : 'p-2 pl-4 pr-4',
+            isTablet ? 'p-3' : 'p-2 pl-4 pr-4',
           ].join(' ')}
           onClick={() => setModalMenuOpen(true)}
         >
           <MenuIcon />
-          {!isMobile ? <span>Menu</span> : null}
+          {!isTablet ? <span>Menu</span> : null}
         </button>
       </div>
     </div>

@@ -97,65 +97,37 @@ import outsoleOrm from '../assets/textures/outsole_orm-astc.webp';
 import {
   useCustomization,
   MATERIAL_TYPES,
-  COLORS,
-  LABEL_COLORS,
   SECTION_AREAS,
   SECTION_MAPPING,
 } from '../context/Customization';
 
 import * as THREE from 'three';
-import { useFrame, useThree } from '@react-three/fiber';
 
 export default function Model(props) {
   const groupRef = useRef(null);
   const {
-    menuOpen,
     activeSection,
     setActiveSection,
     vampColor,
     vampMaterial,
-    setVampColor,
-    setVampMaterial,
     tipColor,
     tipMaterial,
-    setTipColor,
-    setTipMaterial,
     quarterColor,
     quarterMaterial,
-    setQuarterColor,
-    setQuarterMaterial,
     tongueColor,
     tongueMaterial,
-    setTongueColor,
-    setTongueMaterial,
     tongueLabelColor,
-    setTongueLabelColor,
     eyestayColor,
     eyestayMaterial,
-    setEyestayColor,
-    setEyestayMaterial,
     foxingColor,
     foxingMaterial,
-    setFoxingColor,
-    setFoxingMaterial,
     swooshColor,
     swooshMaterial,
-    setSwooshColor,
-    setSwooshMaterial,
     laceColor,
-    setLaceColor,
     backtabColor,
-    setBacktabColor,
     midsoleColor,
-    setMidsoleColor,
     outsoleColor,
-    setOutsoleColor,
   } = useCustomization();
-
-  // useEffect(() => {
-  //   console.log('menuOpen', menuOpen);
-  //   groupRef.current.position.y = menuOpen ? 0.5 : 0;
-  // }, [menuOpen]);
 
   const { nodes, materials, scene } = useGLTF('/assets/models/AF1_v3.glb');
   const groundShadowTexture = useTexture(groundShadow);

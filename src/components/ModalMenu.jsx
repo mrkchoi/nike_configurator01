@@ -98,7 +98,7 @@ function ModalMenu() {
   return (
     <div
       ref={container}
-      className="pointer-events-none fixed bottom-0 left-0 right-0 top-0 z-10 h-screen w-full"
+      className="pointer-events-none fixed bottom-0 left-0 right-0 top-0 z-10 h-screen w-full select-none"
     >
       <div
         ref={backdrop}

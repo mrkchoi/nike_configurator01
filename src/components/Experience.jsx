@@ -1,14 +1,8 @@
-import {
-  OrbitControls,
-  Environment,
-  RandomizedLight,
-  Resize,
-} from '@react-three/drei';
+import { OrbitControls, Environment, RandomizedLight } from '@react-three/drei';
 import React, { useEffect, useMemo, useRef } from 'react';
 
 import * as THREE from 'three';
 import Model from './AF1_v2';
-import { Perf } from 'r3f-perf';
 import { CAMERA_SETTINGS, useCustomization } from '../context/Customization';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -68,11 +62,8 @@ function Experience() {
 
   return (
     <>
-      {/* <Perf position="top-left" /> */}
-      {/* <fog attach="fog" args={['#213547', 10, 20]} /> */}
       <OrbitControls
         ref={controls}
-        // onChange={() => console.log(controls.current.object)}
         maxPolarAngle={Math.PI * 0.75}
         minPolarAngle={-Math.PI * 0.5}
         enablePan={false}

@@ -16,7 +16,7 @@ function Menu() {
   };
 
   return (
-    <div className="menu absolute bottom-0 left-0 w-full overflow-hidden bg-white p-4 pb-8 sm:p-8 sm:pb-8 sm:pl-12 sm:pr-12">
+    <div className="menu absolute bottom-0 left-0 w-full select-none overflow-hidden bg-white p-4 pb-8 sm:p-8 sm:pb-8 sm:pl-12 sm:pr-12">
       <MenuHeader
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}

@@ -5,6 +5,7 @@ import { Draggable } from 'gsap/all';
 import { useMediaQuery } from 'react-responsive';
 
 gsap.registerPlugin(Draggable);
+
 function MenuBacktabLogo({ activeSection }) {
   const { backtabColor, setBacktabColor } = useCustomization();
 
